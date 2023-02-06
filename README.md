@@ -4,5 +4,5 @@ Repository contenant différents supports de cours en lien avec les nouvelles [A
 
 ## Inventaire des cours:
 
-- [Cours # 1: SIC2 2022](https://mediacomem.github.io/cours-ogcapi/01_ogc_apis/#1): cours SIC2 du Master en développement territorial - INSIT
-- [Cours # 2: CGEOM 2023](): intervention dans le cadre du [certificat complémentaire en géomatique](https://www.unige.ch/cgeom/) 2023
+- [Cours # 1: SIC2 MDT 2022](https://mediacomem.github.io/cours-ogcapi/01_mdt-2022/index.html#1): cours SIC2 du [Master en développement territorial](https://www.unige.ch/sciences-societe/formations/masters/developpement-territorial)
+- [Cours # 2: CGEOM 2023](https://mediacomem.github.io/cours-ogcapi/02_cgeom-2023/index.html#1): intervention dans le cadre du [certificat complémentaire en géomatique](https://www.unige.ch/cgeom/) 2023
