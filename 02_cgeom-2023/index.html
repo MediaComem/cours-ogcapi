@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
     <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
-    <title>SIC2 - OGC APIs</title>
+    <title>CGEOM - OGC APIs</title>
     <style>
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -124,10 +124,10 @@ name: title
 layout: true
 class: center, middle, inverse
 ---
-#MDT - INSIT
-##Cours SIC 2
+#CGEOM 2023
+##GEOTOOLS - SDI
 ## OGC APIs
-HES-SO MASTER<br>26-10-2022
+Uni Carl Vogt<br>06-02-2022
 ---
 layout:false
 class: left, top
@@ -138,6 +138,7 @@ class: left, top
 0. La standardisation
 0. Organisations
 0. Les services OGC
+0. La réalité derrière OWS
 0. OGC APIs
 0. OGC Standards Roadmap
 0. Correspondance OGC APIs vs WxS
@@ -401,7 +402,16 @@ Pour aller plus loin: [Data.gov Catalogue Service for the Web (CSW) API](https:/
 
 <p style="text-align:center;"><img src="./images/wms-swisstopo.PNG" alt="WMS swisstopo" width="60%"></p>
 ---
-## 5. Les services OGC:<br>Web Map Tile Service (WMTS)
+## 4. Les services OGC:<br>Styled Layer Descriptor (SLD)
+
+<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="OJwjEXx" data-user="MediaComem" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/MediaComem/pen/OJwjEXx">
+  WMS &amp; SLD</a> by Ingénierie des médias (<a href="https://codepen.io/MediaComem">@MediaComem</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+---
+## 4. Les services OGC:<br>Web Map Tile Service (WMTS)
 
 ### Principaux cas d'utilisation en Suisse:
 
@@ -417,9 +427,29 @@ Pour aller plus loin: [Data.gov Catalogue Service for the Web (CSW) API](https:/
 
 0. Parcourir: `Layer`>`Add Layer`>`Add WMTS Layer` au niveau de la barre d'outils
 0. Créer une nouvelle connexion: `https://wmts.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml`
+---
+## 5. La réalité derrière OWS
+
+.pull-left[
+<p style="text-align:center;"><img src="./images/xml.png" alt="XML" width="100%"></p>
+]
+.pull-right[
+- encodage xml
+- architecture complexe
+- Challening pour les développeurs Web
+- Défi pour l'intégration du web grand public (indexation des recherches)
+ ] 
+ ---
+ ## 5. La réalité derrière OWS
+ 
+ <p style="text-align:center;"><img src="./images/json-xml.png" alt="XML" width="100%"></p>
+
+ XML, JSON, YAML, ...
+
+ La réalité se trouve ailleurs!
 
 ---
-## 5. OGC APIs
+## 6. OGC APIs
 
 .pull-left[
 - Nouvelle génération de standards amorcée en 2015
@@ -438,17 +468,19 @@ Pour aller plus loin: [Data.gov Catalogue Service for the Web (CSW) API](https:/
 <p style="text-align:center;"><img src="./images/ogcapis.png" alt="OGC APIs" width="100%"></p>
 ]
 ---
-## 6. OGC Standards Roadmap
+## 7. OGC Standards Roadmap
 
-- **5** standards déjà adoptés
+- **6** standards déjà adoptés
 - OGC API - Features Parts 1 & 2
 - OA EDR
 - OA Processes
+- OGC API Tiles Part 1: Core
+- OGC API - Common
 - SensorThings API Part 1
 
 <p style="text-align:center;"><img src="./images/ogc-standards-roadmap.png" alt="OGC Standards Roadmap" width="85%"><a href="https://www.ogc.org/roadmap">https://www.ogc.org/roadmap</a></p>
 ---
-## 7. Correspondance OGC APIs vs WxS<br><br>
+## 8. Correspondance OGC APIs vs WxS<br><br>
 
 <style type="text/css">
   .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
@@ -514,14 +546,14 @@ Pour aller plus loin: [Data.gov Catalogue Service for the Web (CSW) API](https:/
   </tbody>
   </table></div>
 ---
-## 8. Les enjeux pour la Suisse
+## 9. Les enjeux pour la Suisse
 
 - Stratégie suisse pour la géoinformation
 - Révision de la norme [eCH-0056: "Profil d’application de géoservices"](https://www.ech.ch/fr/standards/60396)<br><br>
 
 <p style="text-align:center;"><img src="./images/ssg.jpg" alt="Last page" width="100%"></p>
 ---
-## 9. En pratique ça donne quoi ?
+## 10. En pratique ça donne quoi ?
 
 ### Plateforme de test: https://ogc.heig-vd.ch<br>
 
